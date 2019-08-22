@@ -9,23 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/g03mq3xblwryb4f/testmodel.pkl?dl=1'
+export_file_url = 'https://www.dropbox.com/s/g03mq3xblwryb4f/export.pkl?dl=1'
 export_file_name = 'export.pkl'
 
-classes = ['atelectasis',
- 'cardiomegaly',
- 'consolidation',
- 'edema',
- 'enlargedCardiomediastinum',
- 'fracture',
- 'lungLesion',
- 'lungOpacity',
- 'noFinding',
- 'pleuralEffusion',
- 'pleuralOther',
- 'pneumonia',
- 'pneumothorax',
- 'supportDevices']
+classes = ['atelectasis','cardiomegaly','consolidation','edema','enlargedCardiomediastinum','fracture','lungLesion','lungOpacity','noFinding','pleuralEffusion','pleuralOther','pneumonia','pneumothorax','supportDevices']
 path = Path(__file__).parent
 
 app = Starlette()
